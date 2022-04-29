@@ -11,7 +11,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
   <!-- Mi CSS -->
-  <link rel="stylesheet" href="signupstyle.css" />
+  <link rel="stylesheet" href="archivoartistastyle.css" />
 
   <!-- Fuentes  -->
 
@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Open+Sans:wght@300&display=swap"
     rel="stylesheet" />
-  <title>Sign up</title>
+  <title>Añade una obra</title>
   <style></style>
 </head>
 
@@ -74,7 +74,7 @@
             <li>
               <hr class="dropdown-divider" style="border: 1px solid white;">
             </li>
-            <li><a class="dropdown-item" href="/ingresa/login.html">Iniciar sesión</a></li>
+            <li><a class="dropdown-item" href="/Ingresa/login.html">Iniciar sesión</a></li>
           </ul>
         </div>
       </div>
@@ -87,22 +87,29 @@
   <div class="login-container">
     <div class="login-info-container">
       <div class="padding"></div>
-      <h1 class="title">Regístrate</h1>
+      <h1 class="title">Añade una nueva obra</h1>
       <form class="inputs-container" id="form">
-        <input class="input" type="email" id="email" placeholder="E-mail">
-        <input class="input" type="text" id="name" placeholder="Nombre de usuario">
-        <input class="input" type="text" id="name" placeholder="Nombre(s)">
-        <input class="input" type="text" id="name" placeholder="Apellidos">
-        <input class="input" type="password" id="password" placeholder="Contraseña (mayor a 8 caracteres)">
-        <input class="input" type="password" id="password" placeholder="Confirma contraseña">
-        <input class="input" type="tel" placeholder="Teléfono">
-        <p>¿Ya tienes una cuenta? <span class="span"><a href="/ingresa/login.html">Ingresa aquí.</a></span></p>
-        <button class="btn" style="background-color: #FFD060;">Aceptar</button>
-        <p class="warnings" id="warnings"></p>
+        <p>Título de la obra:<input class="input1" type="text" id="titulodeobra" placeholder="Título de la obra"></p>
+        <p>Materiales:<input class="input" type="text" id="materiales" placeholder="Materiales"></p>
+        <p>Descripción:<input class="input" type="text" id="descripción" placeholder="Breve descripción de la obra"></p>
+        <p>Corriente artística:<input class="input1" type="text" placeholder="Corriente artística"></p>
       </form>
+      <div class="divbtn">
+        <p></p>
+        <p class="paragraph">Recuerda subir un máximo de 5 fotos con un tamaño máximo de 10 MB.</p>
+        <button class="btn" style="background-color: #FFD060;">Agregar obra</button>
+        <p class="warnings" id="warnings"></p>
+      </div>
     </div>
-    <img class="image-container" src="galeriablack1.png" alt="">
-  </div>
+    <div>
+      <div class="drag-area">
+        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <header> Drag Or Drop File to Upload</header>
+        <span>OR</span>
+        <button>Browse File</button>
+        <input type="file" hidden>
+      </div>
+    </div>
   </div>
 
   <!-- FIN DE BODY -->
@@ -165,7 +172,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <script src="signupmain.js"></script>
+  <script src="archivoartistamain.js"></script>
 </body>
 
 </html>

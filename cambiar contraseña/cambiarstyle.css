@@ -79,44 +79,41 @@
   --image-bg: #000000;
 }
 
-.body {
+body {
   height: 100vh;
   font-family: "Open Sans", sans-serif;
   background-image: #ffffff;
 }
 
-.left {
-  text-align: left;
-}
-
 .login-container {
-  height: 55em;
+  height: 43.75em;
   width: 60em;
   margin: 6em auto;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   overflow: hidden;
 }
 
 .login-info-container {
-  width: 75%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left;
+  text-align: center;
   padding-top: 0.5rem;
   background-color: var(--login-bg);
 }
 
+.image-container {
+  padding: 2rem;
+  width: 50%;
+  background-color: var(--image-bg);
+  box-sizing: border-box;
+}
+
 .padding {
-  padding: 2rem;
-}
-.padding1 {
-  padding: 1rem;
-}
-.padding2 {
-  padding: 2rem;
+  padding: 4.5rem;
 }
 
 .title {
@@ -127,14 +124,19 @@
   color: var(--title-bg);
 }
 
+.login-info-container > p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25em;
+  margin-top: 1.5em;
+}
+
 .inputs-container {
-  height: 90%;
-  width: 95%;
+  height: 60%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: left;
-  margin-left: 3.5em;
+  align-items: center;
 }
 
 .input,
@@ -159,14 +161,13 @@
 }
 
 .btn {
-  width: 80%;
+  width: 70%;
   letter-spacing: 1px;
   color: black;
   border: none;
   border-radius: 5px;
   background-color: solid var(--button-bg);
   cursor: pointer;
-  margin-left: 2rem;
 }
 
 .inputs-container p {
@@ -183,8 +184,8 @@
   width: 200px;
   text-align: center;
   margin: auto;
-  padding-top: 20px;
   color: #da0202c6;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 1000px) {
